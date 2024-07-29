@@ -54,9 +54,9 @@ git config –global user.email “andyapri429@gmail.com”
 ```
 kemudian tekan enter.
 Hasil Program :
-![](file:///C:/Users/Huawei/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![[Pasted image 20240725214417.png]]
 Penjelasan :
-
+Perintah `git config --global user.email "andyapri429@gmail.com"` digunakan untuk mengatur email pengguna secara global di Git. Email ini akan digunakan untuk mengidentifikasi Anda sebagai penulis atau kontributor pada setiap commit yang Anda buat dalam repositori Git. Pengaturan ini berlaku secara global, artinya akan diterapkan ke semua repositori Git di sistem Anda.
 
 silahkan atur username dengan kode.
 ```git
@@ -64,7 +64,7 @@ silahkan atur username dengan kode.
 ```
 Hasil Program :
 ![[Pasted image 20240725214129.png]]
-Penjelasan :
+Penjelasan :Perintah `git config --global user.name "muhmdars"` digunakan untuk mengatur username pengguna secara global di Git. username ini akan digunakan untuk mengidentifikasi Anda sebagai penulis atau kontributor pada setiap commit yang Anda buat dalam repositori Git. Pengaturan ini berlaku secara global, artinya akan diterapkan ke semua repositori Git di sistem Anda.
 
 
 ### Git init
@@ -78,7 +78,7 @@ git init
 kemudian tekan enter.
 Hasil Program :
 ![[Pasted image 20240725223403.png]]
-Penjelasan :
+Penjelasan : Perintah `git init` digunakan untuk menginisialisasi sebuah repositori Git baru di direktori kerja Anda. Ini adalah langkah pertama yang dilakukan untuk mulai menggunakan Git pada sebuah proyek.
 
 
 
@@ -109,7 +109,7 @@ git remote add origin https://github.com/muhmdars/jillyanbintang.git
 ```
 Hasil Program :
 ![[Pasted image 20240725224133.png]]
-Penjelasan :
+Penjelasan : Perintah `git remote add origin https://github.com/muhmdars/jillyanbintang.git` digunakan untuk menambahkan remote repository ke dalam repositori Git lokal Anda. Remote repository adalah repositori yang berada di lokasi lain, biasanya di server atau layanan hosting seperti GitHub, GitLab, atau Bitbucket, yang memungkinkan Anda untuk berkolaborasi dengan orang lain.
 
 
 
@@ -141,10 +141,26 @@ git push origin main --force
 jika pada saat menekan perintah di atas, kalian akan disuruh untuk sign in terlebih dahulu. Sign in terlebih dahulu melalui jendela yang baru saja terbuka.
 
 Hasil Program :
-![](file:///C:/Users/Huawei/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png)
+![[Pasted image 20240725230505.png]]
 Penjelasan :
 
 
 
-Jika sudah login, kemudian muncul tulisan seperti ini, maka file kalian akan masuk ke repository kalian. Kalian bisa refresh repository kalian untuk melihat apakah ada file yang di folder kita sudah ter-upload.
-![[Pasted image 20240725230505.png]]
+### Cara Agar Bisa Mengupdate Data Ke Github
+
+Semuanya sama seperti cara diatas namun, untuk 'git commit -m "perubahan 2" ubahlah pesan agar kalian tahu apa saja yang akan di update
+
+![[Pasted image 20240729213455.png]]
+di atas terdapat file baru yang di copy dan kita akan coba push ulang
+
+##### Git Add
+
+
+disini file ini akan kita commit dengan perintah 
+```git
+git add .
+```
+Hasil Program :
+![[Pasted image 20240725223657.png]]
+Penjelasan : 
+“.” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
