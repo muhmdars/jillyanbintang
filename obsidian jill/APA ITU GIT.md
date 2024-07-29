@@ -30,14 +30,26 @@ mengapa kita harus membuat akun github dahulu karena akun sign in kalian ini dib
 ## Cara Buat Repository
 
 ### Apa Itu Repository
-
+Dalam konteks sistem kontrol versi seperti Git, **repositori (repository)** adalah tempat di mana semua data proyek Anda disimpan dan dikelola. Repositori menyimpan semua file, folder, dan riwayat perubahan yang terjadi pada proyek Anda.
 
 Buatlah terlebih dahulu repository dengan mengklik `create a new repository`, aturlah repository kalian. Buat menjadi Public ataupun private.
 ![[Pasted image 20240725022804.png]]
 
 isi nama repository kalian dan pilihlah pilihan public/private.
 ![[Pasted image 20240725022933.png]]
-Penjelasan : 
+Penjelasan : Dalam konteks Git dan layanan hosting repositori seperti GitHub, GitLab, atau Bitbucket, repositori (repository) dapat bersifat **private** (pribadi) atau **public** (publik). Berikut penjelasan mengenai perbedaan antara keduanya:
+
+#### Repositori Private
+
+1. **Akses Terbatas**: Hanya orang-orang tertentu yang diizinkan oleh pemilik repositori yang dapat melihat atau mengakses repositori private. Pengguna harus diberikan izin eksplisit untuk melihat, mengkloning, atau berkontribusi pada repositori tersebut.
+2. **Keamanan dan Privasi**: Ideal untuk proyek-proyek yang sensitif, pribadi, atau yang masih dalam tahap pengembangan dan tidak siap untuk dilihat oleh publik. Ini termasuk proyek perusahaan, proyek pribadi, atau proyek yang memerlukan kontrol akses ketat.
+3. **Kontrol Kolaborasi**: Pemilik repositori dapat mengontrol dengan tepat siapa yang dapat membaca atau menulis ke repositori tersebut. Ini memungkinkan manajemen kolaborasi yang lebih terstruktur dan aman.
+
+#### Repositori Public
+
+1. **Akses Terbuka**: Siapa saja dapat melihat dan mengakses repositori public. Repositori ini dapat diakses oleh siapa pun di internet tanpa memerlukan izin khusus.
+2. **Kolaborasi dan Partisipasi**: Ideal untuk proyek open-source yang mengundang kontribusi dari komunitas global. Siapa saja bisa mengkloning repositori, membuat pull request, atau mengajukan isu (issues).
+3. **Visibilitas dan Sharing**: Bagus untuk berbagi proyek dengan publik, mempromosikan pekerjaan Anda, atau menunjukkan keterampilan Anda. Proyek-proyek ini dapat dilihat dan digunakan oleh orang lain untuk referensi atau untuk belajar.
 
 ## Cara Buat File Lokal (File Eksplorer)
 
@@ -68,7 +80,13 @@ Penjelasan :Perintah `git config --global user.name "muhmdars"` digunakan untuk 
 
 
 ### Git init
+Perintah `git init` digunakan untuk menginisialisasi repositori Git baru di dalam direktori kerja Anda. Ini adalah langkah awal untuk mulai menggunakan Git pada proyek Anda.
 
+#### Apa yang Dilakukan `git init`?
+
+1. **Membuat Direktori `.git`**: Perintah ini menciptakan sebuah subdirektori tersembunyi bernama `.git` di dalam direktori kerja Anda. Direktori `.git` berisi semua metadata dan informasi yang diperlukan oleh Git untuk melacak versi dari proyek Anda.
+    
+2. **Menyiapkan Struktur Git**: Dengan `git init`, direktori Anda siap untuk digunakan dengan perintah-perintah Git seperti `git add`, `git commit`, `git status`, dan lainnya.
 
 
 **Setelah** melakukan config, kita akan mengubah folder tersebut menjadi folder git. Dengan cara lakukan perintah
@@ -81,7 +99,6 @@ Hasil Program :
 Penjelasan : Perintah `git init` digunakan untuk menginisialisasi sebuah repositori Git baru di direktori kerja Anda. Ini adalah langkah pertama yang dilakukan untuk mulai menggunakan Git pada sebuah proyek.
 
 
-
 Setelah kalian `git init` maka akan muncul folder baru dengan nama. git (folder ini berbentuk hidden).
 ![[Pasted image 20240725223511.png]]
 
@@ -89,7 +106,7 @@ saya membuat contoh file Belajar Git di folder,
 ![[Pasted image 20240725223552.png]]
 
 ### Git Add
-
+`git add` adalah perintah di Git yang digunakan untuk menambahkan perubahan file ke staging area sebelum melakukan commit. Staging area adalah area perantara di mana Anda dapat mempersiapkan perubahan yang ingin Anda sertakan dalam commit berikutnya.
 
 disini file ini akan kita commit dengan perintah 
 ```git
@@ -101,7 +118,7 @@ Penjelasan :
 “.” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
 
 ### Git Remote
-
+`git remote` adalah perintah di Git yang digunakan untuk mengelola remote repository. Remote repository adalah repositori Git yang berada di lokasi berbeda dari repositori lokal Anda, biasanya di server atau layanan hosting seperti GitHub, GitLab, atau Bitbucket. Dengan menggunakan `git remote`, Anda bisa menambahkan, menghapus, dan mengelola remote repository yang terhubung dengan repositori lokal Anda.
 
 Kemudian kita akan remote Repository kita di gitbash
 ```git
@@ -114,8 +131,7 @@ Penjelasan : Perintah `git remote add origin https://github.com/muhmdars/jillyan
 
 
 ### Git Commit
-
-
+`git commit` adalah perintah di Git yang digunakan untuk menyimpan perubahan dalam repositori lokal Anda. Setiap commit menyimpan snapshot dari file-file yang ada di repositori pada saat itu, bersama dengan pesan yang menjelaskan perubahan yang dilakukan. Commit adalah unit dasar dari versi kontrol di Git, dan memungkinkan Anda untuk melacak sejarah perubahan dari proyek Anda.
 
 Lalu kita akan commit pertama kali dengan cara
 ```git
@@ -142,18 +158,16 @@ jika pada saat menekan perintah di atas, kalian akan disuruh untuk sign in terle
 
 Hasil Program :
 ![[Pasted image 20240725230505.png]]
-Penjelasan :
+Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pengiriman (force push) cabang `main` dari repositori lokal Anda ke remote repository bernama `origin`. Ini akan menggantikan riwayat commit di remote repository dengan riwayat commit di cabang `main` dari repositori lokal Anda, bahkan jika riwayat commit di remote repository berbeda.
 
-
-
-### Cara Agar Bisa Mengupdate Data Ke Github
+## Cara Agar Bisa Mengupdate Data Ke Github
 
 Semuanya sama seperti cara diatas namun, untuk 'git commit -m "perubahan 2" ubahlah pesan agar kalian tahu apa saja yang akan di update
 
 ![[Pasted image 20240729213455.png]]
 di atas terdapat file baru yang di copy dan kita akan coba push ulang
 
-##### Git Add
+### Git Add
 
 
 disini file ini akan kita commit dengan perintah 
@@ -161,6 +175,34 @@ disini file ini akan kita commit dengan perintah
 git add .
 ```
 Hasil Program :
-![[Pasted image 20240725223657.png]]
+![[Pasted image 20240729213647.png]]
 Penjelasan : 
 “.” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
+
+### Git Commit
+
+
+
+Lalu kita akan commit pertama kali dengan cara
+```git
+git commit -m “perubahan ke dua”
+```
+kemudian tekan enter.
+![[Pasted image 20240729213734.png]]
+Penjelasan : 
+"perubahan ke dua" bisa kalian ubah sesuai pesan yang ingin kalian isi.
+
+### Git Push
+Sekarang kita akan push file kita dengan perintah
+```git
+git push origin main --force 
+```
+jika pada saat menekan perintah di atas, kalian akan disuruh untuk sign in terlebih dahulu. Sign in terlebih dahulu melalui jendela yang baru saja terbuka.
+
+Hasil Program :
+![[Pasted image 20240729213947.png]]
+Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pengiriman (force push) cabang `main` dari repositori lokal Anda ke remote repository bernama `origin`. Ini akan menggantikan riwayat commit di remote repository dengan riwayat commit di cabang `main` dari repositori lokal Anda, bahkan jika riwayat commit di remote repository berbeda.
+
+Maka file kalian akan terupdate di Github :
+![[Pasted image 20240729214210.png]]
+
