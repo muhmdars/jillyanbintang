@@ -13,6 +13,53 @@ Hasil Pencarian :
 ![[Pasted image 20240724004733.png]]
 
 ![[Pasted image 20240724004750.png]]
+Setelah itu pilihlah sesuai Bit laptop kalian, disini saya akan memilih 64 bit 
+![[Pasted image 20240801010157.png]]
+Bukalah aplikasi git yang telah kalian download
+![[Pasted image 20240801010433.png]]
+Disini kita akan install Default saja, yang dimana kalian hanya menekan next saja.
+![[Pasted image 20240801010522.png]]
+Install di folder default saja
+![[Pasted image 20240801010730.png]]
+Next saja,
+![[Pasted image 20240801010838.png]]
+Disini next saja,
+![[Pasted image 20240801010910.png]]
+
+Pilih Default saja
+![[Pasted image 20240801010938.png]]
+
+Pilih default saja
+![[Pasted image 20240801011001.png]]
+
+Pilih OpenSSH (Default)
+![[Pasted image 20240801011021.png]]
+
+Next saja.
+![[Pasted image 20240801011055.png]]
+
+Next,
+![[Pasted image 20240801011133.png]]
+
+Next,
+![[Pasted image 20240801011220.png]]
+
+Next,
+![[Pasted image 20240801011243.png]]
+
+Next,
+![[Pasted image 20240801011304.png]]
+
+Next,
+![[Pasted image 20240801011321.png]]
+
+Install.
+![[Pasted image 20240801011340.png]]
+
+Finish, Maka Gitbash sudah terinstall di laptop kalian.
+![[Pasted image 20240801011443.png]]
+
+
 
 ## Cara Login Akun Github
 Langkah awalnya buatlah akun terlebih dahulu di github.
@@ -205,4 +252,3 @@ Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pen
 
 Maka file kalian akan terupdate di Github :
 ![[Pasted image 20240729214210.png]]
-
