@@ -196,6 +196,18 @@ Penjelasan :
 
 3. `git push` (bertujuan untuk memindahkan file yang sudah di add -> commit -> ke repository kita)
 
+Sebelum Commit akan muncul notifikasi seperti ini
+![[Pasted image 20240801012707.png]]
+Penjelasan : Kalian bisa login menggunakan sign in menggunakan browser pada pilihan pertama
+
+Setelah kalian menekan pilihan pertama maka akan muncul browser github yang dimana kalian harus login menggunakan akun yang sudah kalian buat tadi
+![[Pasted image 20240801012845.png]]
+
+Tunggulah sampai loading selesai.
+![[Pasted image 20240801013007.png]]
+\
+Setelah selesai maka akan muncul pemberitahuan seperti ini
+![[Pasted image 20240801013129.png]]
 ## Cara Arahkan Git ke File Lokal 
 Sekarang kita akan push file kita dengan perintah
 ```git
