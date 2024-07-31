@@ -58,9 +58,6 @@ Install.
 
 Finish, Maka Gitbash sudah terinstall di laptop kalian.
 ![[Pasted image 20240801011443.png]]
-
-
-
 ## Cara Login Akun Github
 Langkah awalnya buatlah akun terlebih dahulu di github.
 Bukalah halaman awal github lalu sign up (daftar) melalui websitenya.
@@ -100,7 +97,19 @@ Penjelasan : Dalam konteks Git dan layanan hosting repositori seperti GitHub, Gi
 
 ## Cara Buat File Lokal (File Eksplorer)
 
-Jika sudah menginstall gitbash dan melakukan login, Kemudian buatlah sebuah folder baru. Terserah kalian untuk penempatan folder tersebut.
+Bukalah gitbash lalu arahkan Gitbash Ke tempat kalian ingin tuju, disini saya ambil dimana saya simpan data saya D:/obsidian/
+![[Pasted image 20240801014424.png]]
+Penjelasan : ls berfungsi menampilkan seluruh folder dimana kalian berada
+
+``` git
+cd D:/obsidian/
+```
+Hasil Program :
+![[Pasted image 20240801014809.png]]
+Penjelasan : cd yaitu perintah untuk membuka folder
+
+Atau Kalian bisa menggunakan cara dibawah
+Kemudian buatlah sebuah folder baru. Terserah kalian untuk penempatan folder tersebut.
 ![[Pasted image 20240725220345.png]]
 Didalam folder tersebut (klik kanan) lalu muncul pilihan open git bash here.
 ![[Pasted image 20240725220516.png]]
@@ -124,8 +133,6 @@ silahkan atur username dengan kode.
 Hasil Program :
 ![[Pasted image 20240725214129.png]]
 Penjelasan :Perintah `git config --global user.name "muhmdars"` digunakan untuk mengatur username pengguna secara global di Git. username ini akan digunakan untuk mengidentifikasi Anda sebagai penulis atau kontributor pada setiap commit yang Anda buat dalam repositori Git. Pengaturan ini berlaku secara global, artinya akan diterapkan ke semua repositori Git di sistem Anda.
-
-
 ### Git init
 Perintah `git init` digunakan untuk menginisialisasi repositori Git baru di dalam direktori kerja Anda. Ini adalah langkah awal untuk mulai menggunakan Git pada proyek Anda.
 
@@ -162,7 +169,7 @@ git add .
 Hasil Program :
 ![[Pasted image 20240725223657.png]]
 Penjelasan : 
-“.” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
+"`.` "Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
 
 ### Git Remote
 `git remote` adalah perintah di Git yang digunakan untuk mengelola remote repository. Remote repository adalah repositori Git yang berada di lokasi berbeda dari repositori lokal Anda, biasanya di server atau layanan hosting seperti GitHub, GitLab, atau Bitbucket. Dengan menggunakan `git remote`, Anda bisa menambahkan, menghapus, dan mengelola remote repository yang terhubung dengan repositori lokal Anda.
@@ -174,9 +181,6 @@ git remote add origin https://github.com/muhmdars/jillyanbintang.git
 Hasil Program :
 ![[Pasted image 20240725224133.png]]
 Penjelasan : Perintah `git remote add origin https://github.com/muhmdars/jillyanbintang.git` digunakan untuk menambahkan remote repository ke dalam repositori Git lokal Anda. Remote repository adalah repositori yang berada di lokasi lain, biasanya di server atau layanan hosting seperti GitHub, GitLab, atau Bitbucket, yang memungkinkan Anda untuk berkolaborasi dengan orang lain.
-
-
-
 ### Git Commit
 `git commit` adalah perintah di Git yang digunakan untuk menyimpan perubahan dalam repositori lokal Anda. Setiap commit menyimpan snapshot dari file-file yang ada di repositori pada saat itu, bersama dengan pesan yang menjelaskan perubahan yang dilakukan. Commit adalah unit dasar dari versi kontrol di Git, dan memungkinkan Anda untuk melacak sejarah perubahan dari proyek Anda.
 
@@ -220,15 +224,12 @@ Hasil Program :
 Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pengiriman (force push) cabang `main` dari repositori lokal Anda ke remote repository bernama `origin`. Ini akan menggantikan riwayat commit di remote repository dengan riwayat commit di cabang `main` dari repositori lokal Anda, bahkan jika riwayat commit di remote repository berbeda.
 
 ## Cara Agar Bisa Mengupdate Data Ke Github
-
 Semuanya sama seperti cara diatas namun, untuk 'git commit -m "perubahan 2" ubahlah pesan agar kalian tahu apa saja yang akan di update
 
 ![[Pasted image 20240729213455.png]]
 di atas terdapat file baru yang di copy dan kita akan coba push ulang
 
 ### Git Add
-
-
 disini file ini akan kita commit dengan perintah 
 ```git
 git add .
@@ -236,12 +237,9 @@ git add .
 Hasil Program :
 ![[Pasted image 20240729213647.png]]
 Penjelasan : 
-“.” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
+“`.`” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
 
 ### Git Commit
-
-
-
 Lalu kita akan commit pertama kali dengan cara
 ```git
 git commit -m “perubahan ke dua”
