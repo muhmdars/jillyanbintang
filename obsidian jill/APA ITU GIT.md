@@ -3,7 +3,6 @@ Git adalah salah satu sistem pengontrol versi _(Version Control System)_ pada pr
 Pengontrol versi bertugas mencatat setiap perubahan pada file proyek yang dikerjakan oleh banyak orang maupun sendiri.
 
 Git dikenal juga dengan _distributed revision control_ (VCS terdistribusi), artinya penyimpanan database Git tidak hanya berada dalam satu tempat saja.
-
 ## Cara Install GitBash
 Git Bash adalah antarmuka baris perintah (CLI) yang menggabungkan fungsionalitas Git dan Bash, shell Unix yang populer. Ia menawarkan cara yang mudah digunakan untuk **berinteraksi dengan repositori Git, melakukan tugas kontrol versi, dan menavigasi sistem file**.
 
@@ -71,7 +70,7 @@ jika sudah membuat sign in (login) lah ke akun kalian
 ![[Pasted image 20240725220032.png]]
 Penjelasan : 
 mengapa kita harus membuat akun github dahulu karena akun sign in kalian ini dibuat untuk login di gitbash. agar gitbash bisa langsung login memakai username dan email kita.
-## Cara Buat Repository
+## Cara Buat Repository Di GitHub
 
 ### Apa Itu Repository
 Dalam konteks sistem kontrol versi seperti Git, **repositori (repository)** adalah tempat di mana semua data proyek Anda disimpan dan dikelola. Repositori menyimpan semua file, folder, dan riwayat perubahan yang terjadi pada proyek Anda.
@@ -96,11 +95,9 @@ Penjelasan : Dalam konteks Git dan layanan hosting repositori seperti GitHub, Gi
 3. **Visibilitas dan Sharing**: Bagus untuk berbagi proyek dengan publik, mempromosikan pekerjaan Anda, atau menunjukkan keterampilan Anda. Proyek-proyek ini dapat dilihat dan digunakan oleh orang lain untuk referensi atau untuk belajar.
 
 ## Cara Buat File Lokal (File Eksplorer)
-
 Bukalah gitbash lalu arahkan Gitbash Ke tempat kalian ingin tuju, disini saya ambil dimana saya simpan data saya D:/obsidian/
 ![[Pasted image 20240801014424.png]]
 Penjelasan : ls berfungsi menampilkan seluruh folder dimana kalian berada
-
 ``` git
 cd D:/obsidian/
 ```
@@ -262,3 +259,7 @@ Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pen
 
 Maka file kalian akan terupdate di Github :
 ![[Pasted image 20240729214210.png]]
+
+
+
+## 
