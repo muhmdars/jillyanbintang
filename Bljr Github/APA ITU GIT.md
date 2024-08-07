@@ -9,65 +9,37 @@ Git Bash adalah antarmuka baris perintah (CLI) yang menggabungkan fungsionalitas
 Carilah di menu pencarian keyword “git” bukalah dipilihan pertama. Install lah aplikasi sesuai platfrom kalian. Klik windows jika windows.
 
 Hasil Pencarian :
-![[Pasted image 20240724004733.png]]
+![Download Gitbash](assets/WebsiteGit.png)
 
-![[Pasted image 20240724004750.png]]
+
+![Download Gitbash](assets/websitegit2.png)
 Setelah itu pilihlah sesuai Bit laptop kalian, disini saya akan memilih 64 bit 
-![[Pasted image 20240801010157.png]]
+![Download Gitbash](assets/git3.png)
 Bukalah aplikasi git yang telah kalian download
-![[Pasted image 20240801010433.png]]
+![Install Gitbash](assets/git4.png)
 Disini kita akan install Default saja, yang dimana kalian hanya menekan next saja.
-![[Pasted image 20240801010522.png]]
+![Install Gitbash](assets/git5.png)
 Install di folder default saja
-![[Pasted image 20240801010730.png]]
+![Install Gitbash](assets/git6.png)
 Next saja,
-![[Pasted image 20240801010838.png]]
-Disini next saja,
-![[Pasted image 20240801010910.png]]
-
-Pilih Default saja
-![[Pasted image 20240801010938.png]]
-
-Pilih default saja
-![[Pasted image 20240801011001.png]]
-
-Pilih OpenSSH (Default)
-![[Pasted image 20240801011021.png]]
-
-Next saja.
-![[Pasted image 20240801011055.png]]
-
-Next,
-![[Pasted image 20240801011133.png]]
-
-Next,
-![[Pasted image 20240801011220.png]]
-
-Next,
-![[Pasted image 20240801011243.png]]
-
-Next,
-![[Pasted image 20240801011304.png]]
-
-Next,
-![[Pasted image 20240801011321.png]]
+![Install Gitbash](assets/git7.png)
 
 Install.
-![[Pasted image 20240801011340.png]]
+![Install Gitbash](assets/git8.png)
 
 Finish, Maka Gitbash sudah terinstall di laptop kalian.
-![[Pasted image 20240801011443.png]]
+![Install Gitbash](assets/git9.png)
 ## Cara Login Akun Github
 Langkah awalnya buatlah akun terlebih dahulu di github.
 Bukalah halaman awal github lalu sign up (daftar) melalui websitenya.
-![[Pasted image 20240725215905.png]] 
+![Login](assets/login1.png) 
 Masukkan Email yang akan di buat untuk login di github
-![[Pasted image 20240725215503.png]]
+![Login](assets/login2.png)
 setelah itu masukkan password, username
-![[Pasted image 20240725215633.png]]
+![Login](assets/login3.png) 
 
 jika sudah membuat sign in (login) lah ke akun kalian
-![[Pasted image 20240725220032.png]]
+![Login](assets/login4.png) 
 Penjelasan : 
 mengapa kita harus membuat akun github dahulu karena akun sign in kalian ini dibuat untuk login di gitbash. agar gitbash bisa langsung login memakai username dan email kita.
 ## Cara Buat Repository Di GitHub
@@ -76,10 +48,10 @@ mengapa kita harus membuat akun github dahulu karena akun sign in kalian ini dib
 Dalam konteks sistem kontrol versi seperti Git, **repositori (repository)** adalah tempat di mana semua data proyek Anda disimpan dan dikelola. Repositori menyimpan semua file, folder, dan riwayat perubahan yang terjadi pada proyek Anda.
 
 Buatlah terlebih dahulu repository dengan mengklik `create a new repository`, aturlah repository kalian. Buat menjadi Public ataupun private.
-![[Pasted image 20240725022804.png]]
+![Repository](assets/repository1.png) 
 
 isi nama repository kalian dan pilihlah pilihan public/private.
-![[Pasted image 20240725022933.png]]
+![Repository](assets/repository2.png) 
 Penjelasan : Dalam konteks Git dan layanan hosting repositori seperti GitHub, GitLab, atau Bitbucket, repositori (repository) dapat bersifat **private** (pribadi) atau **public** (publik). Berikut penjelasan mengenai perbedaan antara keduanya:
 
 #### Repositori Private
@@ -96,30 +68,30 @@ Penjelasan : Dalam konteks Git dan layanan hosting repositori seperti GitHub, Gi
 
 ## Cara Buat File Lokal (File Eksplorer)
 Bukalah gitbash lalu arahkan Gitbash Ke tempat kalian ingin tuju, disini saya ambil dimana saya simpan data saya D:/obsidian/
-![[Pasted image 20240801014424.png]]
+![Gitbash](assets/gitbash1.png)
 Penjelasan : ls berfungsi menampilkan seluruh folder dimana kalian berada
 ``` git
 cd D:/obsidian/
 ```
 Hasil Program :
-![[Pasted image 20240801014809.png]]
+![Gitbash](assets/gitbash2.png)
 Penjelasan : cd yaitu perintah untuk membuka folder
 
 Atau Kalian bisa menggunakan cara dibawah
 Kemudian buatlah sebuah folder baru. Terserah kalian untuk penempatan folder tersebut.
-![[Pasted image 20240725220345.png]]
+![Gitbash](assets/gitbash3.png)
 Didalam folder tersebut (klik kanan) lalu muncul pilihan open git bash here.
-![[Pasted image 20240725220516.png]]
+![Gitbash](assets/gitbash4.png)
 Kemudian akan muncul Terminal Gitbash
 Maka jendela git terbuka,
-![[Pasted image 20240725220616.png]]
+![Gitbash](assets/gitbash5.png)
 lalu setelah ini kita akan mengatur beberapa config dengan perintah
 ```git
 git config –global user.email “andyapri429@gmail.com”
 ```
 kemudian tekan enter.
 Hasil Program :
-![[Pasted image 20240725214417.png]]
+![Gitbash](assets/gitbash6.png)
 Penjelasan :
 Perintah `git config --global user.email "andyapri429@gmail.com"` digunakan untuk mengatur email pengguna secara global di Git. Email ini akan digunakan untuk mengidentifikasi Anda sebagai penulis atau kontributor pada setiap commit yang Anda buat dalam repositori Git. Pengaturan ini berlaku secara global, artinya akan diterapkan ke semua repositori Git di sistem Anda.
 
@@ -128,7 +100,7 @@ silahkan atur username dengan kode.
  git config --global user.name "muhmdars"
 ```
 Hasil Program :
-![[Pasted image 20240725214129.png]]
+![Gitbash](assets/gitbash7.png)
 Penjelasan :Perintah `git config --global user.name "muhmdars"` digunakan untuk mengatur username pengguna secara global di Git. username ini akan digunakan untuk mengidentifikasi Anda sebagai penulis atau kontributor pada setiap commit yang Anda buat dalam repositori Git. Pengaturan ini berlaku secara global, artinya akan diterapkan ke semua repositori Git di sistem Anda.
 ### Git init
 Perintah `git init` digunakan untuk menginisialisasi repositori Git baru di dalam direktori kerja Anda. Ini adalah langkah awal untuk mulai menggunakan Git pada proyek Anda.
@@ -146,15 +118,15 @@ git init
 ```
 kemudian tekan enter.
 Hasil Program :
-![[Pasted image 20240725223403.png]]
+![Gitbash](assets/gitbash8.png)
 Penjelasan : Perintah `git init` digunakan untuk menginisialisasi sebuah repositori Git baru di direktori kerja Anda. Ini adalah langkah pertama yang dilakukan untuk mulai menggunakan Git pada sebuah proyek.
 
 
 Setelah kalian `git init` maka akan muncul folder baru dengan nama. git (folder ini berbentuk hidden).
-![[Pasted image 20240725223511.png]]
+![Gitbash](assets/gitbash9.png)
 
 saya membuat contoh file Belajar Git di folder,
-![[Pasted image 20240725223552.png]]
+![Gitbash](assets/gitbash10.png)
 
 ### Git Add
 `git add` adalah perintah di Git yang digunakan untuk menambahkan perubahan file ke staging area sebelum melakukan commit. Staging area adalah area perantara di mana Anda dapat mempersiapkan perubahan yang ingin Anda sertakan dalam commit berikutnya.
@@ -164,7 +136,7 @@ disini file ini akan kita commit dengan perintah
 git add .
 ```
 Hasil Program :
-![[Pasted image 20240725223657.png]]
+![Gitbash](assets/gitbash11.png)
 Penjelasan : 
 "`.` "Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
 
@@ -176,7 +148,7 @@ Kemudian kita akan remote Repository kita di gitbash
 git remote add origin https://github.com/muhmdars/jillyanbintang.git
 ```
 Hasil Program :
-![[Pasted image 20240725224133.png]]
+![Gitbash](assets/gitbash12.png)
 Penjelasan : Perintah `git remote add origin https://github.com/muhmdars/jillyanbintang.git` digunakan untuk menambahkan remote repository ke dalam repositori Git lokal Anda. Remote repository adalah repositori yang berada di lokasi lain, biasanya di server atau layanan hosting seperti GitHub, GitLab, atau Bitbucket, yang memungkinkan Anda untuk berkolaborasi dengan orang lain.
 ### Git Commit
 `git commit` adalah perintah di Git yang digunakan untuk menyimpan perubahan dalam repositori lokal Anda. Setiap commit menyimpan snapshot dari file-file yang ada di repositori pada saat itu, bersama dengan pesan yang menjelaskan perubahan yang dilakukan. Commit adalah unit dasar dari versi kontrol di Git, dan memungkinkan Anda untuk melacak sejarah perubahan dari proyek Anda.
@@ -186,7 +158,7 @@ Lalu kita akan commit pertama kali dengan cara
 git commit -m “belajar awal”
 ```
 kemudian tekan enter.
-![[Pasted image 20240725224532.png]]
+![Gitbash](assets/gitbash13.png)
 Penjelasan : 
 "belajar awal" bisa kalian ubah sesuai pesan yang ingin kalian isi.
 
@@ -198,17 +170,17 @@ Penjelasan :
 3. `git push` (bertujuan untuk memindahkan file yang sudah di add -> commit -> ke repository kita)
 
 Sebelum Commit akan muncul notifikasi seperti ini
-![[Pasted image 20240801012707.png]]
+![Github Login](assets/login6.png)
 Penjelasan : Kalian bisa login menggunakan sign in menggunakan browser pada pilihan pertama
 
 Setelah kalian menekan pilihan pertama maka akan muncul browser github yang dimana kalian harus login menggunakan akun yang sudah kalian buat tadi
-![[Pasted image 20240801012845.png]]
+![Github Login](assets/login7.png)
 
 Tunggulah sampai loading selesai.
-![[Pasted image 20240801013007.png]]
+![Github Login](assets/login8.png)
 \
 Setelah selesai maka akan muncul pemberitahuan seperti ini
-![[Pasted image 20240801013129.png]]
+![Github Login](assets/login9.png)
 ## Cara Arahkan Git ke File Lokal 
 Sekarang kita akan push file kita dengan perintah
 ```git
@@ -217,13 +189,13 @@ git push origin main --force
 jika pada saat menekan perintah di atas, kalian akan disuruh untuk sign in terlebih dahulu. Sign in terlebih dahulu melalui jendela yang baru saja terbuka.
 
 Hasil Program :
-![[Pasted image 20240725230505.png]]
+![Push](assets/file1.png)
 Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pengiriman (force push) cabang `main` dari repositori lokal Anda ke remote repository bernama `origin`. Ini akan menggantikan riwayat commit di remote repository dengan riwayat commit di cabang `main` dari repositori lokal Anda, bahkan jika riwayat commit di remote repository berbeda.
 
 ## Cara Agar Bisa Mengupdate Data Ke Github
 Semuanya sama seperti cara diatas namun, untuk 'git commit -m "perubahan 2" ubahlah pesan agar kalian tahu apa saja yang akan di update
 
-![[Pasted image 20240729213455.png]]
+![Update](assets/update1.png)
 di atas terdapat file baru yang di copy dan kita akan coba push ulang
 
 ### Git Add
@@ -232,7 +204,7 @@ disini file ini akan kita commit dengan perintah
 git add .
 ```
 Hasil Program :
-![[Pasted image 20240729213647.png]]
+![Update](assets/update2.png)
 Penjelasan : 
 “`.`” Ditambahkan agar bisa menambahkan seluruh file yang ada di dalam folder.
 
@@ -242,7 +214,7 @@ Lalu kita akan commit pertama kali dengan cara
 git commit -m “perubahan ke dua”
 ```
 kemudian tekan enter.
-![[Pasted image 20240729213734.png]]
+![Update](assets/update3.png)
 Penjelasan : 
 "perubahan ke dua" bisa kalian ubah sesuai pesan yang ingin kalian isi.
 
@@ -254,11 +226,11 @@ git push origin main --force
 jika pada saat menekan perintah di atas, kalian akan disuruh untuk sign in terlebih dahulu. Sign in terlebih dahulu melalui jendela yang baru saja terbuka.
 
 Hasil Program :
-![[Pasted image 20240729213947.png]]
+![Update](assets/update4.png)
 Penjelasan : Perintah `git push origin main --force` digunakan untuk memaksa pengiriman (force push) cabang `main` dari repositori lokal Anda ke remote repository bernama `origin`. Ini akan menggantikan riwayat commit di remote repository dengan riwayat commit di cabang `main` dari repositori lokal Anda, bahkan jika riwayat commit di remote repository berbeda.
 
 Maka file kalian akan terupdate di Github :
-![[Pasted image 20240729214210.png]]
+![Update](assets/update5.png)
 
 
 

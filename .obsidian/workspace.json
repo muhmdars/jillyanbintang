@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f873b26389f8f460",
+            "id": "1146f1417cf5ed1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
+                "file": "Bljr Github/APA ITU GIT.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 489.5
   },
   "right": {
     "id": "026bb15cbdb72974",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
+                "file": "Bljr Github/APA ITU GIT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
+                "file": "Bljr Github/APA ITU GIT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md"
+                "file": "Bljr Github/APA ITU GIT.md"
               }
             }
           }
@@ -155,36 +155,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f873b26389f8f460",
+  "active": "1146f1417cf5ed1c",
   "lastOpenFiles": [
-    "BASIS DATA - XII/assets/hasilselect.png",
+    "Bljr Github/assets/update5.png",
+    "Bljr Github/APA ITU GIT.md",
+    "Bljr Github/assets/update4.png",
+    "Bljr Github/assets/update3.png",
+    "Bljr Github/assets/update2.png",
+    "Bljr Github/assets/update1.png",
+    "Bljr Github/assets/file1.png",
+    "Bljr Github/assets/login9.png",
+    "Bljr Github/assets/login8.png",
+    "Bljr Github/assets/login7.png",
+    "Bljr Github/assets/login6.png",
+    "Bljr Github/assets/login5.png",
+    "Bljr Github/20240724004733.md",
+    "Bljr Github/assets",
+    "Bljr Github/New folder",
+    "obsidian jill/APA ITU GIT.md",
+    "Bljr Github",
+    "New folder",
     "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
-    "BASIS DATA - XII/assets/select.png",
-    "BASIS DATA - XII/assets/copyclip.png",
-    "BASIS DATA - XII/assets/copyclipboard.png",
-    "BASIS DATA - XII/assets/hasildescpng.png",
-    "Pasted image 20240804140147.png",
-    "Pasted image 20240804140141.png",
-    "BASIS DATA - XII/assets/desc.png",
-    "Pasted image 20240804135421.png",
-    "BASIS DATA - XII/assets/hasildata.png",
     "Vault.md",
     "BASIS DATA - XII/assets",
     "BASIS DATA - XII/New folder",
     "Assets/Assets.md",
     "Cara Membuat Database.md",
     "BASIS DATA - XII",
-    "New folder",
     "Untitled.md",
     "obsidian jill/obsidian jill.md",
     "Assets/Database Membuat tabel/New folder",
     "BASIS DATA - XII/Database Memb",
     "Assets/New folder",
-    "Assets/Belajar Github",
-    "Assets",
     "obsidian jill/.md",
-    "obsidian jill/Belajar GIT.md",
-    "obsidian jill/APA ITU GIT.md",
-    "Tags"
+    "obsidian jill/Belajar GIT.md"
   ]
 }
