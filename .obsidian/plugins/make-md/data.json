@@ -43,14 +43,12 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//Assets",
     "//Assets/Assets/Database Membuat tabel",
-    "//BASIS DATA - XII/BASIS DATA - XII/Database Memb",
-    "//BASIS DATA - XII/BASIS DATA - XII/assets",
     "//Assets/Assets/Belajar Github",
-    "//obsidian jill",
-    "//Bljr Github",
-    "//Bljr Github/Bljr Github/assets"
+    "//BASIS DATA - XII",
+    "//BASIS DATA - XII/BASIS DATA - XII/assets",
+    "//Assets",
+    "//BASIS DATA - XII/BASIS DATA - XII/Database Memb"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
