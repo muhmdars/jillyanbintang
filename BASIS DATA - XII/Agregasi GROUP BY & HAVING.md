@@ -930,3 +930,195 @@ Hasil Program :
     - Fungsi `AVG` digunakan untuk mengetahui rata-rata gaji yang diterima oleh pegawai. Hal ini penting untuk memahami tingkat kompensasi rata-rata dalam organisasi.
 - **Mengapa Menggunakan MAX(Gaji) dan MIN(Gaji)**:
     - Fungsi `MAX` dan `MIN` digunakan untuk mengetahui nilai gaji tertinggi dan terendah di antara seluruh pegawai, yang berguna untuk analisis rentang gaji di perusahaan.
+
+
+
+## Tabel Customers.
+
+### **Topik:** Penggunaan `JOIN` untuk menggabungkan dua tabel (Orders dan Customers)
+
+Program : 
+```sql
+SELECT 
+    orders.orderid, 
+    orders.orderdate, 
+    orders.custid, 
+    customers.companyname, 
+    customers.contactname, 
+    customers.city, 
+    customers.phone
+FROM 
+    orders
+JOIN 
+    customers 
+ON 
+    orders.custid = customers.customerld;
+
+```
+
+Query : 
+![Join](assets/join1.png)
+
+Penjelasan:
+
+- **SELECT** = untuk memilih kolom mana saja yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
+    
+- **orders.orderID** = orders merupakan nama tabel yang ingin ditampilkan kolomnya, yaitu orderID. Jadi kolom orderID pada tabel orders ingin ditampilkan.
+    
+- **orders.orderDate** = kolom orderDate pada tabel orders ingin ditampilkan.
+    
+- **orders.custID** = kolom custID dalam tabel orders dipilih untuk ditampilkan.
+    
+- **customers.CompanyName** = kolom CompanyName dalam tabel customers dipilih untuk ditampilkan.
+    
+- **customers.contactName** = kolom contactName dalam tabel customers dipilih untuk ditampilkan.
+    
+- **customers.city** = kolom city dalam tabel customers dipilih untuk ditampilkan.
+    
+- **customers.phone** = kolom Phone dalam tabel customers dipilih untuk ditampilkan.
+    
+- **FROM orders, customers** = untuk memilih dari tabel mana saja yang kolomnya ingin di pilih untuk ditampilkan. ortders adalah nama tabel pertama tyang dipilih dan customers adalah nama tabel kedua yang dipilih
+    
+- **WHERE** = kondisi yang harus dipenuhi. Syarat kolom data yang bisa ditampilkan:
+    
+    - **orders.custID = customers.customerID**: kondisi dari Where yang harus dipenuhi. Jadi data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing datanya bisa ditampilkan.
+    
+-  **Hasilnya** = jadi yang tampil adalah kolom OrderID, Order Date dan CustID dari tabel orders dan kolom CompanyName, ContactName,City, dan Phone dari tabel Customers
+### **Topik:** Menggunakan `WHERE` untuk filter data setelah melakukan `JOIN`
+
+Query : 
+```sql
+SELECT 
+    o.orderid, 
+    o.orderdate, 
+    o.custid, 
+    c.companyname, 
+    c.contactname, 
+    c.city, 
+    c.phone
+FROM 
+    orders o
+JOIN 
+    customers c 
+ON 
+    o.custid = c.customerld
+WHERE 
+    c.city = 'London';
+```
+
+Hasil Program : 
+![Join](assets/join2.png)
+
+Penjelasan:
+- **SELECT** Untuk memilih kolom mana saja yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
+
+- **0.orderID** = o merupakan singkatan dari tabel orders. kolom OrderID merupakan kolom dari tabel orders yang dipilih untuk di tampilkan.
+
+- **o.OrderDATE** = Kolom OrderDate merupakan kolom dari tabel o yaitu orders yang dipilih untuk ditampilkan.
+
+- **o.CustID** = Kolom CustID merupakan kolom dari tabel o yaitu orders yang dipilih untuk ditampilkan.
+
+- **c.CompanyName** = c merupakan singkatan dari customers kolom CompanyName merupakan kolom dari tabel customers yang dipilih untuk ditampilkan.
+
+- **c.ContactName** = Kolom ContactName merupakan kolom dari tabel c yaitu customer yang dipilih untuk ditampilkan.
+
+- **c.city** = Kolom city merupakan kolom dari tabel c yaitu customers yang dipilih untuk ditampilkan
+
+- **c.Phone** = kolom phone merupakan kolom dari c yaitu customers yang dipilih untuk ditampilkan.
+
+- FROM Orders o.customers c = untuk memilih dari tabel mana saja yang ingin dipilih untuk ditampilkan orders adalah nama tabel yang dipilih untuk ditampilkan tapi disingkat jadi o, agar lebih mudah dan cepat. customers adalah nama tabel yang dipilih untuk ditampilkan tapi disingkat  jadi c.
+
+- Where = kondisi yang harus dipenuhi oleh suatu kolom data agar bisa ditampilkan
+
+- o.CustId = c.CustomerID = data pada kolom CustID dalam tabel o(orders) harus sama dengan data pada kolom CustomerID dalam tabel c(Customers)
+
+- AND = untuk menyeleksi dua data atay lebih pada perintah Where
+
+- (c.CIty = 'London') = kondisi tambahan yang harus dipenuhi juga jadi pada kolom city dari tabel c(customers) datanya harus berisi data 'London' agar bisa ditampilkan
+
+- Hasilnya = jadi hanya barisan data yang kolom city dari tabel customers mempunyai data 'London' yang bisa diambil.
+
+## menampilkan pesanan yang dilakukan oleh pelanggan yang berasal dari London dan menampilkan informasi tambahan dari tabel `employees`.
+
+Query : 
+```sql
+SELECT 
+    o.orderid, 
+    o.orderdate, 
+    c.companyname, 
+    c.contactname, 
+    c.phone, 
+    e.lastname, 
+    e.title
+FROM 
+    orders o
+JOIN 
+    customers c ON o.custid = c.customerld
+JOIN 
+    employees e ON o.empid = e.empld
+WHERE 
+    c.City = 'London';
+```
+
+Hasil : 
+![Join](join3.png)
+Penjelasan:
+- SELECT = untuk memilih kolom mana saja ynag ingin ditampilkan dari tabel mana kolom tersebut diambil.
+
+- o.OrderId,o.OrderDATE = kolom OrderID dan OrderDATE dari tabel o(Orders) dipilih untuk ditampilkan.
+
+- c.CompanyName,c.ContactName,c.Phone = Kolom-Kolom CompanyName,ContactName dan Phone dari tabel c(customers) dipilih untuk ditampilkan
+
+- e.LastName,e.Title = Kolom LastName dan Title dari tabel e(Employees) dipilih untuk ditampilkan
+
+- FROM orders o.customers c.Employees e = untuk memilih dari tabel mana saja yang kolomnya dipilih untuk ditampilkan orders disingkat jadi o adalah nama tabel yang dipilih customers disingkat jadi c adalah nama tabel yang dipilih employees disingkat e adalah nama tabel yang dipilih untuk ditampilkan
+
+- WHERE = kondisi yang harus dipenuhi oleh suatu data agar bisa ditampilkan.
+
+- (o.CustID = c.CustomerID) = data pada kolom CustID dalam tabel o(Orders) harus sama dengan data pada kolom CustomersID dalam tabel c(customers).
+
+- AND = untuk menyeleksi dua data atau lebih pada perintah WHERE
+
+- (o,EmpID =e.EmpID) = data pada kolom EmpID dalam tabel o(orders) harus sama dengan data pada kolom EmpID dalam tabel e(employees)
+
+- Hasilnya = yang tampil adalah kolom yang memenuhi semua kondisi WHERE
+
+## Kondisi tambahan (`e.FirstName = 'Margaret'`) membatasi hasil hanya pada karyawan dengan nama depan Margaret
+
+Query : 
+```sql
+SELECT 
+    o.orderid, 
+    o.orderdate, 
+    c.companyname, 
+    c.contactname, 
+    c.phone, 
+    e.lastname, 
+    e.title
+FROM 
+    orders o
+JOIN 
+    customers c ON o.custid = c.customerld
+JOIN 
+    employees e ON o.empid = e.empld
+WHERE 
+    c.city = 'London' 
+    AND e.firsname = 'Margaret';
+```
+
+Hasil : 
+![Join](join6.png)
+Penjelasan:
+1. **SELECT**: Memilih kolom-kolom tertentu yang ingin ditampilkan:
+    - `OrderID`, `OrderDate`: Dari tabel _orders_, untuk menunjukkan nomor pesanan dan tanggal pesanan.
+    - `CompanyName`, `ContactName`, `Phone`: Dari tabel _customers_, untuk menunjukkan informasi tentang perusahaan yang memesan.
+    - `LastName`, `Title`: Dari tabel _employees_, untuk menampilkan informasi karyawan yang bertanggung jawab atas pesanan.
+2. **FROM**: Mengambil data dari tabel:
+    - `orders o`: Tabel utama yang berisi informasi pesanan.
+    - `customers c`: Tabel yang berisi data pelanggan, digabungkan dengan `orders` menggunakan `CustomerID`.
+    - `employees e`: Tabel yang berisi informasi karyawan, digabungkan dengan `orders` menggunakan `EmployeeID`.
+3. **WHERE**: Kondisi yang membatasi hasil data yang diambil:
+    - `c.City = 'London'`: Hanya menampilkan pesanan dari pelanggan yang berlokasi di London.
+    - `e.FirstName = 'Margaret'`: Menampilkan hanya pesanan yang diurus oleh karyawan dengan nama depan "Margaret".
+
+## 

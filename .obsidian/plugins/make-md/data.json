@@ -28,7 +28,7 @@
   "spacesEnabled": true,
   "syncFormulaToFrontmatter": true,
   "spacesPerformance": false,
-  "currentWaypoint": 0,
+  "currentWaypoint": 1,
   "enableFolderNote": true,
   "folderIndentationLines": true,
   "revealActiveFile": false,
@@ -42,13 +42,10 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/",
-    "//Assets/Assets/Database Membuat tabel",
-    "//Assets/Assets/Belajar Github",
-    "//BASIS DATA - XII",
-    "//BASIS DATA - XII/BASIS DATA - XII/assets",
-    "//Assets",
-    "//BASIS DATA - XII/BASIS DATA - XII/Database Memb"
+    "BASIS DATA - XII",
+    "BASIS DATA - XII/BASIS DATA - XII/New folder",
+    "BASIS DATA - XII/BASIS DATA - XII/assets",
+    "BASIS DATA - XII/New folder"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
