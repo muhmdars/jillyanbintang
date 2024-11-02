@@ -42,10 +42,10 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "BASIS DATA - XII",
     "BASIS DATA - XII/BASIS DATA - XII/New folder",
-    "BASIS DATA - XII/BASIS DATA - XII/assets",
-    "BASIS DATA - XII/New folder"
+    "BASIS DATA - XII/New folder",
+    "BASIS DATA - XII",
+    "BASIS DATA - XII/BASIS DATA - XII/Database Memb"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",

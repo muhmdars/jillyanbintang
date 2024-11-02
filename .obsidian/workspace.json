@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fe7c0e028119bb42",
+        "id": "1f3687f3623e2866",
         "type": "tabs",
         "children": [
           {
-            "id": "f414ff47c614dc3f",
+            "id": "f20aacf9ba750a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,7 +16,9 @@
                 "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Agregasi GROUP BY & HAVING"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,15 +68,19 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
-            "id": "5334619b4bfb6ad5",
+            "id": "9bd8779ea115c773",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
-              "state": {}
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Spaces"
             }
           }
         ],
@@ -94,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
+                "file": "HA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for HA"
             }
           },
           {
@@ -111,10 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
+                "file": "HA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from HA"
             }
           },
           {
@@ -125,7 +139,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -134,8 +150,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md"
-              }
+                "file": "HA.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of HA"
             }
           }
         ]
@@ -155,26 +173,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f414ff47c614dc3f",
+  "active": "f20aacf9ba750a51",
   "lastOpenFiles": [
-    "BASIS DATA - XII/assets/join6.png",
-    "join5.png",
-    "BASIS DATA - XII/assets/join3.png",
-    "Pasted image 20240919004121.png",
-    "Pasted image 20240919004029.png",
-    "BASIS DATA - XII/BASIS DATA - XII.md",
-    "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
-    "BASIS DATA - XII/New folder/MATERI GROUP BY DAN HAVING.md",
-    "Pasted image 20240919003855.png",
+    "BASIS DATA - XII/assets/2.2.png",
+    "BASIS DATA - XII/assets/1.1.png",
+    "BASIS DATA - XII/assets/query12.png",
+    "Pasted image 20241103023320.png",
+    "Pasted image 20241103023319.png",
+    "Pasted image 20241103022558.png",
     "BASIS DATA - XII/Kerja KLP Basis Data XII.md",
-    "BASIS DATA - XII/![[Pasted image 20240919003733.png.md",
-    "Pasted image 20240919003733.png",
-    "BASIS DATA - XII/assets/join2.png",
-    "Pasted image 20240919002428.png",
-    "Pasted image 20240919002019.png",
-    "BASIS DATA - XII/assets/join1.png",
-    "BASIS DATA - XII/Database Memb/Database Memb.md",
+    "BASIS DATA - XII/New folder/MATERI GROUP BY DAN HAVING.md",
+    "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
     "2024-08-29.md",
+    "Copy code.md",
+    "obsidian jill/php 5.png.md",
+    "obsidian jill/obsidian jill.md",
+    "obsidian jill/MATERI PHP.md",
+    "obsidian jill/Belajar GIT.md",
+    "BASIS DATA - XII.zip",
+    "HA.md",
+    "suci.md",
+    "Pasted image 20241003062946.png",
+    "Pasted image 20241003062917.png",
+    "Pasted image 20241003062827.png",
+    "Pasted image 20241003062004.png",
+    "Pasted image 20241003061910.png",
+    ".md",
+    "BASIS DATA - XII/BASIS DATA - XII.md",
+    "BASIS DATA - XII/![[Pasted image 20240919003733.png.md",
+    "BASIS DATA - XII/Database Memb/Database Memb.md",
     "Untitled.canvas",
     "Assets/Assets.md",
     "jiliyan",
@@ -191,10 +218,6 @@
     "Cara Membuat Database.md",
     "BASIS DATA - XII",
     "Untitled.md",
-    "obsidian jill/obsidian jill.md",
-    "Assets/Database Membuat tabel/New folder",
-    "BASIS DATA - XII/Database Memb",
-    "obsidian jill/.md",
-    "obsidian jill/Belajar GIT.md"
+    "obsidian jill/.md"
   ]
 }
