@@ -11,17 +11,30 @@
             "id": "f20aacf9ba750a51",
             "type": "leaf",
             "state": {
+              "type": "mk-space",
+              "state": {
+                "path": "BASIS DATA - XII/New folder"
+              },
+              "icon": "lucide-file",
+              "title": "New folder"
+            }
+          },
+          {
+            "id": "95af26d164cb95fe",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
+                "file": "Tugas Relasi 1-N/Tugas ERD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Agregasi GROUP BY & HAVING"
+              "title": "Tugas ERD"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +87,7 @@
             }
           },
           {
-            "id": "9bd8779ea115c773",
+            "id": "5a7b0fcafdfb24d4",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -83,8 +96,7 @@
               "title": "Spaces"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -173,8 +185,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f20aacf9ba750a51",
+  "active": "95af26d164cb95fe",
   "lastOpenFiles": [
+    "Tugas Relasi 1-N/Tugas ERD.md",
+    "BASIS DATA - XII/New folder/Untitled.md",
+    "Tugas Relasi 1-N",
+    "New folder",
+    "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
     "BASIS DATA - XII/assets/2.2.png",
     "BASIS DATA - XII/assets/1.1.png",
     "BASIS DATA - XII/assets/query12.png",
@@ -183,7 +200,6 @@
     "Pasted image 20241103022558.png",
     "BASIS DATA - XII/Kerja KLP Basis Data XII.md",
     "BASIS DATA - XII/New folder/MATERI GROUP BY DAN HAVING.md",
-    "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
     "2024-08-29.md",
     "Copy code.md",
     "obsidian jill/php 5.png.md",
@@ -197,7 +213,6 @@
     "Pasted image 20241003062917.png",
     "Pasted image 20241003062827.png",
     "Pasted image 20241003062004.png",
-    "Pasted image 20241003061910.png",
     ".md",
     "BASIS DATA - XII/BASIS DATA - XII.md",
     "BASIS DATA - XII/![[Pasted image 20240919003733.png.md",
@@ -205,7 +220,6 @@
     "Untitled.canvas",
     "Assets/Assets.md",
     "jiliyan",
-    "New folder",
     "Bljr Github/APA ITU GIT.md",
     "Bljr Github/20240724004733.md",
     "Bljr Github/assets",
@@ -216,7 +230,6 @@
     "BASIS DATA - XII/assets",
     "BASIS DATA - XII/New folder",
     "Cara Membuat Database.md",
-    "BASIS DATA - XII",
     "Untitled.md",
     "obsidian jill/.md"
   ]
