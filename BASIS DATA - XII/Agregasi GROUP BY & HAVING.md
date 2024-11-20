@@ -1219,3 +1219,442 @@ Hasil Program :
 **Hasilnya** = Kolom yang ditampilkan adalah `OrderID`, `OrderDate`, dan `CustID` dari tabel `orders`, serta `CompanyName`, `ContactName`, `City`, dan `Phone` dari tabel `customers`.
 
 ### 3
+Program: 
+```sql
+SELECT o.OrderID, 
+       o.OrderDate, 
+       c.CompanyName, 
+       c.ContactName, 
+       c.Phone, 
+       e.LastName, 
+       e.Title
+FROM orders o
+JOIN customers c ON o.CustomerID = c.CustomerID
+JOIN employees e ON o.EmpID = e.EmpID;
+```
+
+Hasil Program : 
+![Query Select](assets/1.3.png)
+
+- **SELECT** = untuk memilih kolom mana saja yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
+    
+    - `o.OrderID`, `o.OrderDate` = kolom `OrderID` dan `OrderDate` dari tabel **orders** dipilih untuk ditampilkan.
+    - `c.CompanyName`, `c.ContactName`, `c.Phone` = kolom `CompanyName`, `ContactName`, dan `Phone` dari tabel **customers** dipilih untuk ditampilkan.
+    - `e.LastName`, `e.Title` = kolom `LastName` dan `Title` dari tabel **employees** dipilih untuk ditampilkan.
+- **FROM orders o, customers c, employees e** = untuk memilih dari tabel mana saja yang kolom-kolomnya dipilih untuk ditampilkan.
+    
+    - **orders** disingkat menjadi alias `o` adalah nama tabel tempat kolom `OrderID` dan `OrderDate` diambil.
+    - **customers** disingkat menjadi alias `c` adalah nama tabel tempat kolom `CompanyName`, `ContactName`, dan `Phone` diambil.
+    - **employees** disingkat menjadi alias `e` adalah nama tabel tempat kolom `LastName` dan `Title` diambil.
+- **WHERE** = kondisi yang harus dipenuhi adalah:
+    
+    - `o.CustomerID = c.CustomerID` = Data pada kolom `CustomerID` dari tabel **orders** harus sama dengan data pada kolom `CustomerID` dari tabel **customers**.
+    - `AND o.EmpID = e.EmpID` = Data pada kolom `EmpID` dari tabel **orders** harus sama dengan data pada kolom `EmpID` dari tabel **employees**.
+
+**Hasilnya** = Yang tampil adalah kolom-kolom yang memenuhi semua kondisi dari bagian `WHERE`.
+
+### 4.
+Program : 
+```sql
+SELECT o.OrderID, 
+       o.OrderDate, 
+       c.CompanyName, 
+       c.ContactName, 
+       c.Phone, 
+       e.LastName, 
+       e.Title
+FROM orders o
+JOIN customers c ON o.CustomerID = c.CustomerID
+JOIN employees e ON o.EmpID = e.EmpID
+WHERE e.FirstName = 'Margaret';
+```
+
+Hasil Program : 
+![Query Select](assets/1.4.png)
+
+- **SELECT** = untuk memilih kolom mana saja yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
+  - **o.orderID, o.orderDate** = kolom `orderID` dan `orderDate` dari tabel `o` (orders) dipilih untuk ditampilkan.
+  - **c.companyName, c.contactName, c.phone** = kolom `companyName`, `contactName`, dan `phone` dari tabel `c` (customers) dipilih untuk ditampilkan.
+  - **e.lastName, e.title** = kolom `lastName` dan `title` dari tabel `e` (employees) dipilih untuk ditampilkan.
+
+- **FROM orders o, customers c, employees e** = untuk memilih dari tabel mana saja.  
+  Yang kolomnya dipilih untuk ditampilkan:  
+  - **orders o** = adalah nama tabel `orders` yang disingkat menjadi `o`.
+  - **customers c** = adalah nama tabel `customers` yang disingkat menjadi `c`.
+  - **employees e** = adalah nama tabel `employees` yang disingkat menjadi `e`.
+
+- **WHERE** = kondisi yang digunakan untuk memilih suatu kolom data agar bisa ditampilkan.
+  - **o.customerID = c.customerID** = data pada kolom `customerID` dalam tabel `o` (orders) harus sama dengan data pada kolom `customerID` dalam tabel `c` (customers).
+
+- **AND** = untuk menyesuaikan dua data pada perintah `WHERE`.  
+  Contoh:  
+  - **o.employeeID = e.employeeID** = data pada kolom `employeeID` dalam tabel `o` (orders) harus sama dengan data pada kolom `employeeID` dalam tabel `e` (employees).  
+  - **e.firstName = 'Nancy' AND e.lastName = 'Davolio'** = data hanya akan ditampilkan jika memenuhi kondisi:  
+    - Kolom `firstName` dari tabel `employees` bernilai `'Laura'`.  
+    - Kolom `lastName` dari tabel `employees` bernilai `'Peacock'`.
+
+### 5
+
+Program : 
+```sql
+SELECT 
+    c.customerID, 
+    c.companyName, 
+    o.orderID, 
+    o.orderDate, 
+    p.productID, 
+    p.productName, 
+    od.quantity, 
+    od.unitPrice 
+FROM 
+    customers c, orders o, orderDetails od, products p 
+WHERE 
+    o.customerID = c.customerID AND 
+    od.orderID = o.orderID AND 
+    od.productID = p.productID 
+ORDER BY 
+    c.customerID;
+```
+
+Hasil Program : 
+![Query Select](assets/1.5.png)
+
+- **SELECT**: Memilih kolom-kolom berikut untuk ditampilkan:
+    
+    - `c.customerID`: ID pelanggan dari tabel `customers`.
+    - `c.companyName`: Nama perusahaan pelanggan dari tabel `customers`.
+    - `o.orderID`: ID pesanan dari tabel `orders`.
+    - `o.orderDate`: Tanggal pesanan dari tabel `orders`.
+    - `p.productID`: ID produk dari tabel `products`.
+    - `p.productName`: Nama produk dari tabel `products`.
+    - `od.quantity`: Kuantitas produk dari tabel `orderDetails`.
+    - `od.unitPrice`: Harga satuan produk dari tabel `orderDetails`.
+- **FROM**: Menentukan tabel-tabel sumber data:
+    
+    - `customers c`: Tabel pelanggan disingkat menjadi `c`.
+    - `orders o`: Tabel pesanan disingkat menjadi `o`.
+    - `orderDetails od`: Tabel detail pesanan disingkat menjadi `od`.
+    - `products p`: Tabel produk disingkat menjadi `p`.
+- **WHERE**: Menentukan hubungan antar tabel:
+    
+    - `o.customerID = c.customerID`: Menghubungkan pesanan (`orders`) dengan pelanggan (`customers`).
+    - `od.orderID = o.orderID`: Menghubungkan detail pesanan (`orderDetails`) dengan pesanan (`orders`).
+    - `od.productID = p.productID`: Menghubungkan detail pesanan (`orderDetails`) dengan produk (`products`).
+- **ORDER BY**: Mengurutkan hasil berdasarkan `customerID`.
+
+### 6.
+
+Program : 
+```sql
+SELECT 
+    cu.customerid, 
+    cu.companyname, 
+    o.orderid AS OrdID, 
+    o.orderdate AS OrdDate, 
+    CONCAT(e.lastname, ', ', e.firstname) AS EmployeeName, 
+    od.productid AS ProdID, 
+    p.productname, 
+    od.quantity AS Qty
+FROM 
+    customers cu
+    JOIN orders o ON cu.customerid = o.customerid
+    JOIN orderdetails od ON o.orderid = od.orderid
+    JOIN products p ON od.productid = p.productid
+    JOIN employees e ON o.employeeid = e.EmpID
+ORDER BY 
+    o.orderid;
+```
+
+Hasil Program : 
+![Query Select](assets/1.6.png)
+
+SELECT
+Digunakan untuk memilih kolom mana saja yang ingin ditampilkan dan diambil datanya dari tabel. Kolom-kolom tersebut dipilih secara eksplisit.
+
+Kolom-Kolom yang Dipilih
+**`c.customerid`, `c.companyname`**
+    
+    - Kolom `customerid` dan `companyname` berasal dari tabel `customers`.
+    - Data ini dipilih untuk ditampilkan.
+**`o.orderid AS OrdID`, `o.orderdate AS OrdDate`**
+    
+    - `orderid` adalah kolom yang berisi nomor pesanan, dan `orderdate` berisi tanggal pesanan dari tabel `orders`.
+    - Kolom ini diberi alias:
+        - `orderid` → **OrdID**
+        - `orderdate` → **OrdDate**
+    - Alias ini digunakan untuk memberikan nama sementara pada kolom agar lebih mudah dibaca.
+**`CONCAT(e.lastname, ', ', e.firstname) AS EmployeeName`**
+    
+    - Perintah **CONCAT** digunakan untuk menggabungkan teks dari beberapa kolom. Dalam kasus ini:
+        - `e.lastname` (nama belakang)
+        - `', '` (tanda koma dan spasi)
+        - `e.firstname` (nama depan)
+    - Kolom ini berasal dari tabel `employees`.
+    - Hasil gabungan diberi alias **EmployeeName** untuk menampilkan nama karyawan secara lengkap.
+**`od.productid AS ProdID`, `od.quantity AS Qty`**
+    
+    - Kolom `productid` dan `quantity` berasal dari tabel `orderdetails`.
+    - Kolom ini diberi alias:
+        - `productid` → **ProdID**
+        - `quantity` → **Qty**
+    - Alias ini digunakan untuk memberikan nama sementara agar lebih jelas.
+
+**SELECT**  
+    Digunakan untuk memilih kolom mana saja yang ingin ditampilkan dan diambil datanya.
+    
+    - **`p.productname`**  
+        Kolom **ProductName** dari tabel **Products** dipilih untuk ditampilkan.
+
+---
+
+**FROM Clause**  
+    Digunakan untuk menentukan tabel yang digunakan dalam query. Dalam query ini, tabel yang digunakan adalah:
+    
+    - **`customers` (cu)**
+    - **`orders` (o)**
+    - **`orderdetails` (od)**
+    - **`products` (p)**
+    - **`employees` (e)**
+    
+    Semua tabel tersebut diberi alias (nama sementara) untuk memudahkan referensi saat menulis query.
+    
+    - **Alias Tabel**
+        - `cu` → Tabel `customers`
+        - `o` → Tabel `orders`
+        - `od` → Tabel `orderdetails`
+        - `p` → Tabel `products`
+        - `e` → Tabel `employees`
+
+---
+
+**WHERE Clause**  
+    Digunakan untuk menentukan kondisi yang harus dipenuhi oleh suatu kolom agar data bisa ditampilkan.
+    
+    - **`c.customerid = o.customerid`**  
+        Kondisi ini memastikan bahwa data pada kolom `customerid` di tabel `customers` cocok dengan data pada kolom `customerid` di tabel `orders`.
+        
+    - **`o.orderid = od.orderid`**  
+        Kondisi ini memastikan bahwa data pada kolom `orderid` di tabel `orders` cocok dengan data pada kolom `orderid` di tabel `orderdetails`.
+        
+    - **`od.productid = p.productid`**  
+        Kondisi ini memastikan bahwa data pada kolom `productid` di tabel `orderdetails` cocok dengan data pada kolom `productid` di tabel `products`.
+        
+    - **`o.employeeid = e.EmpID`**  
+        Kondisi ini memastikan bahwa data pada kolom `employeeid` di tabel `orders` cocok dengan data pada kolom `EmpID` di tabel `employees`.
+        
+
+---
+ **ORDER BY**  
+    Data diurutkan berdasarkan kolom `orderid` dari tabel `orders`.
+
+---
+ **Hasil Akhir**
+    - Kolom **LastName** dan **FirstName** dari tabel **employees** digabungkan dengan **CONCAT** dan diberi alias sementara **EmployeeName**.
+    - Data akan ditampilkan dalam bentuk hasil query seperti pada gambar awal.
+
+### 7.
+Program : 
+```sql
+SELECT 
+    c.customerid, 
+    c.companyname, 
+    c.contactname, 
+    o.orderid, 
+    o.orderdate, 
+    e.empid, 
+    e.lastname, 
+    e.firstname
+FROM 
+    customers c, 
+    orders o, 
+    employees e
+WHERE 
+    c.customerid = o.custid AND o.empid = e.empid;
+```
+
+Hasil Program : 
+![Query Select](assets/1.7.png)
+
+- `CREATE VIEW customerEmp` = merupakan tabel virtual yang dibuat dengan nama **customerEmp**
+
+- **AS SELECT** = untuk memilih kolom-kolom mana saja yang ingin dipilih untuk dimasukkan ke tabel virtual.
+
+- **C.CustomerID, C.CompanyName, C.ContactName** = kolom **customerID**, **CompanyName**, dan **ContactName** dari tabel `C` (`customers`) dipilih untuk dimasukkan ke dalam tabel virtual.
+
+- **O.OrderID, O.OrderDate** = kolom **orderID** dan **orderDate** dari tabel `O` (`orders`) dipilih untuk dimasukkan ke dalam tabel virtual.
+
+- **E.EmployeeID, E.LastName, E.FirstName** = kolom **EmployeeID**, **LastName**, dan **FirstName** dari tabel `E` (`employees`) dipilih untuk dimasukkan ke dalam tabel virtual.
+
+- **FROM** = `customers` (dengan alias `C`), `orders` (dengan alias `O`), dan `employees` (dengan alias `E`) untuk memilih entitas tabel mana saja yang kolomnya ingin dimasukkan ke dalam tabel virtual. 
+  - Alias (`C`, `O`, `E`) mempermudah penamaan tabel yang kolomnya dipilih.
+
+- **WHERE** = merupakan bagian untuk menyatakan bahwa ada suatu data agar bisa dimasukkan ke dalam tabel virtual.
+
+    - **C.CustomerID = O.CustomerID** = data pada kolom **CustomerID** dari tabel `customers` harus sama dengan data pada kolom **CustomerID** dari tabel `orders` agar bisa dimasukkan.
+
+    - **O.EmployeeID = E.EmployeeID** = data pada kolom **EmployeeID** dari tabel `orders` harus sama dengan data pada kolom **EmployeeID** dari tabel `employees` agar bisa dimasukkan.
+
+Hasilnya:
+- Sebuah tabel virtual telah dibuat dengan nama **customerEmp** yang memuat data dari:
+  - Tabel `customers`
+  - Tabel `orders`
+  - Tabel `employees`.
+
+### 8.
+Program : 
+```sql
+SELECT od.OrderID, od.ProductID, p.ProductName, od.Quantity, od.UnitPrice FROM orderdetails od, products p WHERE od.ProductID = p.ProductID;
+```
+
+Hasil Program : 
+![Query Select](assets/1.8.png)
+- **CREATE VIEW odProducts** = untuk membuat tabel virtual dengan nama **odProducts**.
+    
+- **AS SELECT** = untuk memilih kolom-kolom mana saja yang ingin dipilih untuk dimasukkan ke tabel virtual.
+    
+    - **od.orderID, od.ProductID, od.quantity, od.unitPrice** = kolom `orderID`, `ProductID`, `quantity`, dan `unitPrice` dari tabel **orderdetails** dipilih untuk dimasukkan.
+        
+    - **p.ProductName** = kolom `ProductName` dari tabel **Products** dipilih untuk dimasukkan.
+        
+- **FROM orderdetails od, Products p** = untuk memilih dari tabel mana saja yang kolomnya dipilih untuk dimasukkan. **orderdetails** dan **Products** adalah nama tabel yang dipilih.
+    
+- **WHERE** = kondisi yang harus dipenuhi oleh suatu data agar bisa dimasukkan ke dalam tabel virtual.
+    
+    - **(p.ProductID = od.ProductID)** = data pada kolom `ProductID` dari tabel **Products** harus sama dengan data pada kolom `ProductID` dari tabel **orderdetails** agar bisa dimasukkan.
+
+---
+Hasilnya
+
+- Tabel virtual yang bernama **odProducts** akan terdiri dari kolom data dari 2 tabel: **orderdetails** dan **Products**.
+
+### 9.
+Program : 
+```sql
+SELECT 
+    c.customerid, 
+    c.companyname, 
+    o.orderid, 
+    od.productid, 
+    ROUND(od.unitprice, 2), 
+    od.quantity, 
+    od.discount, 
+    ROUND(((1 - od.discount) * od.unitprice * od.quantity), 2) AS Jumlah
+FROM 
+    customers c
+    JOIN orders o ON c.customerid = o.customerid
+    JOIN orderdetails od ON o.orderid = od.orderid
+ORDER BY 
+    c.customerid;
+```
+
+Hasil Program : 
+![Query Select](assets/1.9.png)
+- **`SELECT`**  
+    Untuk memilih kolom mana saja yang ingin ditampilkan dan dihitung.
+    
+- **`c.customerID, c.companyName`**  
+    Kolom `customerID` dan `companyName` dari tabel `customers` dipilih untuk ditampilkan.
+    
+- **`o.orderID`**  
+    Kolom `orderID` dari tabel `orders` dipilih untuk ditampilkan.
+    
+- **`od.productID, od.unitPrice, od.quantity, od.discount`**  
+    Kolom `productID`, `unitPrice`, `quantity`, dan `discount` dari tabel `orderdetails` dipilih untuk ditampilkan.
+    
+- **`ROUND(od.unitPrice, 2)`**  
+    Digunakan untuk membulatkan bilangan dari kolom `unitPrice` sampai jumlah digit tertentu, sesuai dengan nilai yang dibuat, yaitu `2`.
+    
+- **`ROUND((1 - od.Discount) * od.unitPrice * od.Quantity, 2) AS Jumlah`**  
+    Untuk membulatkan bilangan dari kolom hasil dari `(1 - od.Discount)` lalu dikalikan dengan `unitPrice` dan `Quantity`, sampai jumlah digit yaitu `2`.  
+    **AS Jumlah**: untuk memberikan label nama sementara pada hasil hitungan tersebut.
+    
+- **`FROM customers c, orders o, orderdetails od`**  
+    Menunjukkan tabel mana saja yang akan dipilih untuk ditampilkan.  
+    **customers, orders, orderdetails** merupakan nama-nama tabel yang digunakan.
+    
+- **`WHERE`**  
+    Kondisi yang harus dipenuhi oleh suatu data agar bisa ditampilkan:
+    
+    - **`c.customerID = o.customerID`**  
+        Hanya menampilkan data yang sama dengan data pada kolom `customerID` di tabel `customers`.
+    - **`o.orderID = od.orderID`**  
+        Hanya menampilkan data yang sama dengan data pada kolom `orderID` di tabel `orders` dan `orderdetails`.
+- **`AND`**  
+    Digunakan untuk menyambungkan lebih dari satu kondisi dalam klausa `WHERE`.
+    
+- **`ORDER BY c.customerID`**  
+    Data akan diurutkan berdasarkan kolom `customerID` dari tabel `customers`.
+
+### 10. 
+```sql
+SELECT 
+    c.customerid, 
+    c.companyname, 
+    ROUND(SUM((1 - od.discount) * od.unitprice * od.quantity), 2) AS TotalJumlah
+FROM 
+    customers c, 
+    orders o, 
+    orderdetails od
+WHERE 
+    c.customerid = o.custid 
+    AND o.orderid = od.orderid
+GROUP BY 
+    c.customerid, 
+    c.companyname
+ORDER BY 
+    c.customerid;
+```
+
+Hasil Program: 
+![Query Select](assets/1.10.png)
+
+SELECT
+Digunakan untuk memilih kolom mana saja yang ingin ditampilkan dan dibulatkan:
+
+- **c.CustomerID**: Kolom `CustomerID` dari tabel `customers`.
+- **c.CompanyName**: Kolom `CompanyName` dari tabel `customers`.
+
+ROUND
+
+Menggunakan fungsi:
+
+sql
+
+Copy code
+
+`ROUND(SUM((1 - od.discount) * od.unitprice * od.quantity), 2)`
+
+- Fungsi ini digunakan untuk membulatkan hasil **SUM** dari:
+    - (1−kolom Discount)×UnitPrice×Quantity(1 - \text{kolom Discount}) \times \text{UnitPrice} \times \text{Quantity}(1−kolom Discount)×UnitPrice×Quantity
+    - Dibulatkan hingga 2 digit desimal.
+- Nama kolom hasilnya sementara diubah menjadi `TotalJumlah`.
+
+FROM
+Mengambil data dari tabel berikut:
+
+- **customers** (dengan alias `c`)
+- **orders** (dengan alias `o`)
+- **orderdetails** (dengan alias `od`)
+
+Tabel-tabel ini adalah sumber data untuk kolom yang dipilih dan fungsi yang digunakan.
+
+**WHERE**  
+= kondisi yang harus dipenuhi oleh suatu data agar bisa ditampilkan.  
+**c.customerID = o.custID**  
+= data pada kolom `CustomerID` dari tabel `customers` harus sama dengan data pada kolom `custID` di tabel `orders`.  
+
+**AND**  
+= untuk menyelesaikan dua atau lebih kondisi pada klausa `WHERE`.  
+**o.orderID = od.orderID**  
+= data pada kolom `OrderID` dari tabel `orders` harus sama dengan data pada kolom `OrderID` dari tabel `orderdetails`.  
+
+**GROUP BY c.customerID, c.companyName**  
+= untuk mengelompokkan data sesuai dengan kolom `CustomerID` dan `CompanyName` dari tabel `customers`.  
+
+**ORDER BY c.customerID**  
+= untuk mengurutkan data berdasarkan kolom `CustomerID` dari tabel `customers`.  
+
+**Hasilnya**  
+Jadi, kolom yang dikelompokkan adalah `CustomerID` dan `CompanyName` dan tampilannya diurutkan berdasarkan kolom `CustomerID`.  
+
+

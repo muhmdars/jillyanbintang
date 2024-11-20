@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tugas Relasi 1-N/Tugas ERD.md",
+                "file": "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tugas ERD"
+              "title": "Agregasi GROUP BY & HAVING"
             }
           }
         ],
@@ -87,7 +87,7 @@
             }
           },
           {
-            "id": "5a7b0fcafdfb24d4",
+            "id": "e53afb6118eaed8d",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -96,7 +96,8 @@
               "title": "Spaces"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -187,6 +188,15 @@
   },
   "active": "95af26d164cb95fe",
   "lastOpenFiles": [
+    "Assets/1.10.png",
+    "Pasted image 20241120140056.png",
+    "Assets/1.9.png",
+    "Assets/1.8.png",
+    "Assets/1.7.png",
+    "Assets/1.6.png",
+    "Assets/1.5.png",
+    "BASIS DATA - XII/assets/1.4.png",
+    "BASIS DATA - XII/assets/1.3.png",
     "Tugas Relasi 1-N/Tugas ERD.md",
     "BASIS DATA - XII/New folder/Untitled.md",
     "Tugas Relasi 1-N",
@@ -194,10 +204,6 @@
     "BASIS DATA - XII/Agregasi GROUP BY & HAVING.md",
     "BASIS DATA - XII/assets/2.2.png",
     "BASIS DATA - XII/assets/1.1.png",
-    "BASIS DATA - XII/assets/query12.png",
-    "Pasted image 20241103023320.png",
-    "Pasted image 20241103023319.png",
-    "Pasted image 20241103022558.png",
     "BASIS DATA - XII/Kerja KLP Basis Data XII.md",
     "BASIS DATA - XII/New folder/MATERI GROUP BY DAN HAVING.md",
     "2024-08-29.md",
@@ -209,10 +215,6 @@
     "BASIS DATA - XII.zip",
     "HA.md",
     "suci.md",
-    "Pasted image 20241003062946.png",
-    "Pasted image 20241003062917.png",
-    "Pasted image 20241003062827.png",
-    "Pasted image 20241003062004.png",
     ".md",
     "BASIS DATA - XII/BASIS DATA - XII.md",
     "BASIS DATA - XII/![[Pasted image 20240919003733.png.md",
